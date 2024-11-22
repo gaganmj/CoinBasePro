@@ -79,17 +79,36 @@ MatchView: Shows recent match data (trades) for subscribed products.
 SystemStatus: Displays the active products (channels) subscribed by all users.
 File Structure
 
-Copy code
-.
-├── backend/               # Node.js WebSocket server
-│   ├── server.ts          # Main server code
-│   ├── package.json       # Backend dependencies
-│   └── ...
-├── frontend/              # React frontend
-│   ├── src/               # React components and app logic
-│   ├── package.json       # Frontend dependencies
-│   └── ...
-└── README.md              # Project documentation
+coinbase-websocket-app/
+│
+├── backend/                          # Backend folder containing Express server and WebSocket logic
+│   ├── server.ts                     # Express server and WebSocket integration logic
+│   └── package.json                  # Backend dependencies and scripts
+│
+├── frontend/                         # Frontend folder containing React app
+│   ├── src/                          # Source code for the React app
+│   │   ├── components/               # All reusable React components
+│   │   │   ├── MatchView.tsx         # Match data display component
+│   │   │   ├── PriceView.tsx         # Price view and order book display component
+│   │   │   ├── Subscribe.tsx         # Product subscription and unsubscription component
+│   │   │   ├── SystemStatus.tsx      # System status component showing active subscriptions
+│   │   │   └── index.tsx             # Main entry file for components in the app
+│   │   ├── App.tsx                   # Main App component that ties everything together
+│   │   ├── index.tsx                 # React app entry point
+│   │   ├── react-app-env.d.ts        # TypeScript environment definitions for React
+│   │   ├── setupTests.ts             # Test setup file
+│   │   ├── theme.ts                  # Theme customization for Material UI
+│   │   └── styles.css                # Global CSS file for styling
+│   ├── public/                       # Public folder for static assets like index.html
+│   │   ├── index.html                # Main HTML template for the React app
+│   │   └── favicon.ico               # Application favicon
+│   ├── package.json                  # Frontend dependencies and scripts
+│   ├── tsconfig.json                 # TypeScript configuration
+│
+├── README.md                         # Project description and instructions
+├── package.json                      # Root level package.json, contains overall dependencies for both backend and frontend
+└── .gitignore                        # Files and directories to ignore for git version control
+
 Contributing
 Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request with your changes.
 
