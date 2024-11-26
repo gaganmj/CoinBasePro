@@ -28,7 +28,7 @@ cd CoinBasePro
 
 
 The folder structure should be as below
-NOTE: Please click on RAW view to see exact folder structure
+NOTE: Navigate to this link https://github.com/gaganmj/CoinBasePro/blob/main/README.md and Please click on RAW view to see exact folder structure.
 
 coinBasePro
 │
