@@ -60,18 +60,18 @@ The folder structure should be as below:
 
 2. Install dependencies in Server directory(backend)
 Run the following command to install the required dependencies:
-**npm install typescript @types/node @types/express @types/socket.io @types/ws @types/cors @types/jsonwebtoken @types/bcryptjs --save-dev**
-**npm install typescript --save-dev**
-**npm install ts-node --save-dev**
-**npx tsc**
-**node dist/server.js // to start server**
-
+```npm install typescript @types/node @types/express @types/socket.io @types/ws @types/cors @types/jsonwebtoken @types/bcryptjs --save-dev
+npm install typescript --save-dev
+npm install ts-node --save-dev
+npx tsc
+node dist/server.js // to start server
+```
 4. Install dependencies in client directory(frontend)
 Run the following command to install the required dependencies:
-**npm install**
-**npm install --save-dev @testing-library/jest-dom@^6.6.3 @testing-library/react@^16.0.1 @testing-library/user-event@^14.5.2 jest@^27.5.1 jest-mock@^29.7.0 react-test-renderer@^18.3.1**
-**npm start**
-
+```npm install
+npm install --save-dev @testing-library/jest-dom@^6.6.3 @testing-library/react@^16.0.1 @testing-library/user-event@^14.5.2 jest@^27.5.1 jest-mock@^29.7.0 react-test-renderer@^18.3.1
+npm start
+```
 Code Style
 Use Prettier for code formatting
 Follow ESLint guidelines for JavaScript/TypeScript
