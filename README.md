@@ -27,13 +27,12 @@ git clone https://github.com/gaganmj/CoinBasePro.git
 cd CoinBasePro
 
 
-The folder structure should be as below
-NOTE: Navigate to this link https://github.com/gaganmj/CoinBasePro/blob/main/README.md and Please click on RAW view to see exact folder structure.
+The folder structure should be as below:
 
 coinBasePro
 │
 ├── Server/                          
-│   ├── server.ts 
+│   ├── (link)server.ts 
 │   ├── env
 │   ├── package.json  
 │   └── tsconfig.json    
