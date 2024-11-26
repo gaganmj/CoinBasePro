@@ -1,0 +1,244 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Beautiful gradient background */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent body scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightblue;
+}
+
+/* Container for the app */
+.app-container {
+  background: lightblue;
+  padding: 20px;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  position: relative; /* Added to make it a positioned container for the logout button */
+}
+
+/* Logout button - top right */
+.logout-button {
+  position: absolute; /* Absolute positioning */
+  top: 20px; /* Adjust the distance from the top */
+  right: 20px; /* Adjust the distance from the right */
+  padding: 10px 15px;
+  background-color: #ff4747; /* Red color for logout button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* CardStack now uses grid for a two-column layout */
+.card-stack {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 10px 60px; /* Adjusted spacing between the cards */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+/* Styled MUI Paper component (Card) with padding */
+.styled-card {
+  padding: 15px; /* Decreased padding inside the card */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Reduced shadow for smaller cards */
+  width: 100%; /* Full width of the grid item */
+  max-width: 500px; /* Decreased the max-width of cards */
+  height: 250px; /* Fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the content inside the card */
+  font-size: 0.9rem; /* Smaller font size inside cards */
+  overflow: hidden; /* Prevent overflow of content */
+}
+
+/* Style for cards after the first one to start content from top */
+.card-stack .styled-card:not(:first-child) {
+  justify-content: flex-start; /* Align text to the top for all cards except the first one */
+}
+
+/* Target the first card and apply smaller font-size to buttons */
+.card-stack .styled-card:first-child h6 {
+  font-size: 0.9rem;
+}
+
+.card-stack .styled-card:first-child .MuiButton-root {
+  font-size: 0.7rem; /* Make buttons in the first card smaller */
+  padding: 6px 10px; /* Smaller padding */
+}
+
+/* Typography for headers */
+h1 {
+  font-size: 2rem; /* Reduced font size for the main header */
+  color: #4A90E2;
+  text-align: center;
+  margin-bottom: 15px; /* Reduced margin-bottom */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2, h3 {
+  font-size: 1.5rem; /* Reduced font size for subheaders */
+  color: #333;
+  margin-bottom: 12px; /* Reduced margin-bottom */
+  font-weight: 600;
+}
+
+/* List Styling for Price View */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px; /* Reduced margin-bottom for list items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem; /* Reduced font size for list items */
+}
+
+ul li span {
+  padding: 8px 15px; /* Reduced padding for span elements */
+  border-radius: 6px;
+  font-size: 1rem; /* Smaller font size for span elements */
+}
+
+ul li span.buy {
+  background-color: #28a745; /* Green for Buy */
+  color: white;
+}
+
+ul li span.sell {
+  background-color: #dc3545; /* Red for Sell */
+  color: white;
+}
+
+/* Material UI Button styling */
+.MuiButton-root {
+  font-size: 0.9rem; /* Smaller font size for buttons */
+  margin: 5px;
+  border-radius: 8px;
+  padding: 8px 12px; /* Smaller padding */
+  transition: all 0.3s ease;
+}
+
+.MuiButton-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .styled-card {
+    max-width: 400px; /* Slightly reduced card width for medium screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Slightly reduced h1 font size for medium screens */
+  }
+
+  h2, h3 {
+    font-size: 1.3rem; /* Slightly smaller subheader sizes */
+  }
+
+  .MuiButton-root {
+    font-size: 0.8rem; /* Smaller font size for buttons */
+    padding: 6px 10px; /* Smaller padding for buttons */
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  .styled-card {
+    margin-bottom: 15px; /* Reduced margin for cards */
+    max-width: 220px; /* Reduced max width for cards */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .card-stack {
+    grid-template-columns: 1fr; /* Stack the cards vertically on small screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller font size for h1 */
+  }
+
+  h2, h3 {
+    font-size: 1.2rem; /* Smaller font size for h2 and h3 */
+  }
+
+  .MuiButton-root {
+    font-size: 0.8rem; /* Smaller font size for buttons */
+    padding: 6px 10px; /* Smaller padding for buttons */
+  }
+}
+
+/* For mobile devices (extra small) */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 5px; /* Further reduced padding for smaller screens */
+  }
+
+  .styled-card {
+    max-width: 200px; /* Reduced card size */
+    height: auto; /* Let the height be dynamic */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Smaller font for mobile screens */
+  }
+
+  h2, h3 {
+    font-size: 1rem; /* Even smaller font for subheaders */
+  }
+
+  .MuiButton-root {
+    font-size: 0.7rem; /* Smaller font size for buttons */
+    padding: 4px 8px; /* Reduced padding for buttons */
+  }
+}
+
+/* Additional styles */
+.hZoxyf {
+  padding: 0 !important;
+  font-size: 7px !important;
+}
+
+.css-1gtchvp-MuiPaper-root .css-z31ogw {
+  margin-bottom: 5px;
+}
+
+.card-stack .fmGDHf {
+  padding: 0;
+  margin-top: 0;
+}
+
+.app-container .css-r3djoj-MuiTouchRipple-root {
+}
