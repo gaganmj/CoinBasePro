@@ -1,4 +1,4 @@
-WebSocket Server with Coinbase Integration and JWT Authentication
+#WebSocket Server with Coinbase Integration and JWT Authentication
 This project is a WebSocket server built with Node.js, Express, and WebSocket. It connects to the Coinbase WebSocket API for real-time cryptocurrency updates and integrates JWT (JSON Web Tokens) authentication for secure access. It allows clients to subscribe to cryptocurrency channels (such as BTC-USD, ETH-USD) to receive live updates for order books and market matches.
 
 Features
