@@ -29,9 +29,9 @@ cd CoinBasePro
 
 The folder structure should be as below:
 
-coinBasePro
+**coinBasePro
 │
-├──[server]                     
+├──server                 
 │   ├── (link)server.ts 
 │   ├── env
 │   ├── package.json  
@@ -55,7 +55,7 @@ coinBasePro
 │   ├── package.json                  
 │   ├── tsconfig.json                 
 │
-└──  README.md                                                         
+└──  README.md**                                                      
 
 
 2. Install dependencies in Server directory(backend)
