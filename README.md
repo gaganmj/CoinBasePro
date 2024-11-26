@@ -23,8 +23,8 @@ npm (Node package manager)
 Setup Instructions
 1. Clone the repository
 Clone the repository to your local machine:
-git clone https://github.com/gaganmj/coinbase-websocket-server.git
-cd coinbase-websocket-server
+git clone https://github.com/gaganmj/CoinBasePro.git
+cd CoinBasePro
 
 The folder structure should be as below
 coinBasePro
