@@ -32,7 +32,7 @@ The folder structure should be as below:
 ```coinBasePro
 │
 ├──server                 
-│   ├── (link)server.ts 
+│   ├── server.ts 
 │   ├── env
 │   ├── package.json  
 │   └── tsconfig.json    
