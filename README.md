@@ -31,7 +31,7 @@ The folder structure should be as below:
 
 coinBasePro
 │
-├──[epub](https://github.com/name/project/releases/download/v1.0.0/book.epub)                       
+├──[https://github.com/gaganmj/CoinBasePro/tree/main/server]server                       
 │   ├── (link)server.ts 
 │   ├── env
 │   ├── package.json  
