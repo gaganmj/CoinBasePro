@@ -31,7 +31,7 @@ The folder structure should be as below:
 
 coinBasePro
 │
-├──[https://github.com/gaganmj/CoinBasePro/tree/main/server]server                       
+├──[server]                     
 │   ├── (link)server.ts 
 │   ├── env
 │   ├── package.json  
