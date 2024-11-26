@@ -26,7 +26,9 @@ Clone the repository to your local machine:
 git clone https://github.com/gaganmj/CoinBasePro.git
 cd CoinBasePro
 
+
 The folder structure should be as below
+
 coinBasePro
 │
 ├── Server/                          
